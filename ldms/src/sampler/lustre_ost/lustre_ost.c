@@ -93,7 +93,7 @@ static struct ost_data *ost_create(const char *ost_name, const char *basedir)
         rbn_init(&ost->ost_tree_node, ost->name);
         rbt_init(&ost->job_stats, string_comparator);
 
-	log_fn(LDMSD_LDEBUG, SAMP
+	log_fn(LDMSD_LINFO, SAMP
 		" using stats, jobstats, and osd data from %s, %s, and %s\n",
 		ost->stats_path, ost->job_stats_path, ost->osd_path);
 
