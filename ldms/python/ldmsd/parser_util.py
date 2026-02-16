@@ -1015,8 +1015,6 @@ class YamlCfg(object):
                             hostname = socket.gethostname()
                             cfg_args = {}
                             for attr in cfg_:
-                                if attr == 'name' or attr == 'reconnect':
-                                    continue
                                 if attr == 'perm':
                                     cfg_[attr] = perm_handler(cfg_[attr])
                                 cfg_args[attr] = cfg_[attr]
